@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Educore-infraestructura/Educore-infraestructura.csproj" />
+  <Project Path="EducoreApi/EducoreApi.csproj" />
+</Solution>
