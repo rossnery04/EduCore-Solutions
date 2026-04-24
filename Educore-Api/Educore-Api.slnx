@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="Domain-educore/Domain-educore.csproj" />
   <Project Path="Educore-Api/Educore-Api.csproj" />
+  <Project Path="Educore-aplicacion/Educore-aplicacion.csproj" />
+  <Project Path="Ifraestructura-educore/Ifraestructura-educore.csproj" />
 </Solution>

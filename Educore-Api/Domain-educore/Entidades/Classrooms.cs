@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Domain_educore.Entidades
 {
-    internal class Classrooms
+    public class Classrooms
     {
+        public int id { get; set; } //primary key
+
+        public string name { get; set; }
     }
 }

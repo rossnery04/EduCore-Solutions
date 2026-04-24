@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Domain_educore.Entidades
 {
-    internal class Category
+    public class Category
     {
+        public int Id { get; set; }// primary key 
+        public  string Name { get; set; }
+
+        public  string Description { get; set; }
+
+        //relations
+
+        public virtual ICollection<Workshop> Workshops { get; set; }
     }
 }

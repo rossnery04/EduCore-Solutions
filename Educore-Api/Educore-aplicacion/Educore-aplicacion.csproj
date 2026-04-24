@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="MappingProfiles\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
 </Project>
