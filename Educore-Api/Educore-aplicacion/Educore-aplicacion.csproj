@@ -10,8 +10,11 @@
   <ItemGroup>
     <Folder Include="MappingProfiles\" />
     <Folder Include="Contracts\" />
-    <Folder Include="Services\" />
-    <Folder Include="DTOs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain-educore\Domain-educore.csproj" />
+    <ProjectReference Include="..\Ifraestructura-educore\Ifraestructura-educore.csproj" />
   </ItemGroup>
 
 </Project>

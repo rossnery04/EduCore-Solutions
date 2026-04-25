@@ -16,7 +16,10 @@ public class PaymentRepositorio
             .Include(p => p.Resgistrations)
             .ToListAsync();
     }
-
+    public async Task<payment> GetByIdAsync(int id)
+    {
+        return await context.Set<payment>().FindAsync(id);
+    }
     public async Task AddAsync(payment pay)
     {
         context.Set<payment>().Add(pay);

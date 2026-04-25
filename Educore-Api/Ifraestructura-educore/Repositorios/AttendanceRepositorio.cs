@@ -9,7 +9,10 @@ public class AttendanceRepositorio
     {
         this.context = context;
     }
-
+    public async Task<attedance> GetByIdAsync(int id)
+    {
+        return await context.Set<attedance>().FindAsync(id);
+    }
     public async Task<List<attedance>> GetAllAsync()
     {
         return await context.attendances
@@ -38,5 +41,6 @@ public class AttendanceRepositorio
             context.attendances.Remove(att);
             await context.SaveChangesAsync();
         }
+
     }
 }

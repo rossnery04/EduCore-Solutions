@@ -9,7 +9,10 @@ public class RegistrationsRepositorio
     {
         this.context = context;
     }
-
+    public async Task<Resgistrations> GetByIdAsync(int id)
+    {
+        return await context.Set<Resgistrations>().FindAsync(id);
+    }
     public async Task<List<Resgistrations>> GetAllAsync()
     {
         return await context.resgistrations

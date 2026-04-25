@@ -11,6 +11,11 @@ public class StudentsRepositorio
         this.context = context;
     }
 
+    public async Task<Students> GetByIdAsync(int id)
+    {
+        return await context.Set<Students>().FindAsync(id);
+    }
+
     public async Task<List<Students>> GetAllAsync()
     {
         return await context.students

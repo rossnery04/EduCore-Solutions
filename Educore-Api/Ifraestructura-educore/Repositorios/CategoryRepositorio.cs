@@ -10,6 +10,11 @@ public class CategoryRepositorio
         this.context = context;
     }
 
+    public async Task<Category> GetByIdAsync(int id)
+    {
+        return await context.Set<Category>().FindAsync(id);
+    }
+
     public async Task<List<Category>> GetAllAsync()
     {
         return await context.Set<Category>()

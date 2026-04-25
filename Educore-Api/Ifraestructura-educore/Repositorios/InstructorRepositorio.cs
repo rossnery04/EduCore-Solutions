@@ -16,7 +16,10 @@ public class InstructorsRepositorio
             .Include(i => i.Workshops)
             .ToListAsync();
     }
-
+    public async Task<instructors> GetByIdAsync(int id)
+    {
+        return await context.Set<instructors>().FindAsync(id);
+    }
     public async Task AddAsync(instructors instructor)
     {
         context.Instructors.Add(instructor);

@@ -17,7 +17,10 @@ namespace Ifraestructura_educore.Repositorios
         {
             return await context.Set<workshopClassroom>().ToListAsync();
         }
-
+        public async Task<workshopClassroom> GetByIdAsync(int id)
+        {
+            return await context.Set<workshopClassroom>().FindAsync(id);
+        }
         public async Task AddAsync(workshopClassroom wc)
         {
             context.Set<workshopClassroom>().Add(wc);
